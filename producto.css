@@ -1,0 +1,65 @@
+#contenedor-principal{
+    border: 1px solid red;
+    padding: 3vh;
+    display: grid;
+    grid-template-rows: 10vh 1vh auto 5vh ;
+    justify-content: stretch;
+    grid-template-columns: 25% 20% auto;
+    grid-template-areas: 
+    "imagen imagen titulo"
+    "imagen imagen precio"
+    "imagen imagen descripcion"
+    "imagen imagen boton-comprar";
+}
+
+#boton-comprar{
+    grid-area: boton-comprar;
+}
+#img{
+    grid-area: imagen;
+    max-width: 85vh;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+#titulo{
+    grid-area: titulo;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aqua;
+    font-size: 3vw;
+    -webkit-text-stroke: 1px black;
+}
+#precio{
+    grid-area: precio;
+}
+
+.descripcion{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    background-color: aquamarine;
+    grid-area: descripcion;
+}
+
+a {
+    color:darkgreen;
+}
+
+a:hover{
+    background-color: aquamarine;
+}
+
+#precio {
+    color: red;
+    font-size: 2vw;
+}
+
+#formcomentarios{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    }
+
+h4{
+    font-size: 2vw;
+}
