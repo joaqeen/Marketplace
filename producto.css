@@ -2,7 +2,7 @@
     border: 1px solid red;
     padding: 3vh;
     display: grid;
-    grid-template-rows: 10vh 1vh auto 5vh ;
+    grid-template-rows: auto auto auto auto ;
     justify-content: stretch;
     grid-template-columns: 25% 20% auto;
     grid-template-areas: 
@@ -38,7 +38,12 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin: auto;
     background-color: aquamarine;
+}
+
+#descripcion {
     grid-area: descripcion;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
