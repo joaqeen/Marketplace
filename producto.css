@@ -1,9 +1,8 @@
-#contenedor-principal{
+#product-container{
     border: 1px solid red;
     padding: 3vh;
     display: grid;
     grid-template-rows: auto auto auto auto ;
-    justify-content: stretch;
     grid-template-columns: 25% 20% auto;
     grid-template-areas: 
     "imagen imagen titulo"
@@ -11,60 +10,72 @@
     "imagen imagen descripcion"
     "imagen imagen boton-comprar";
 }
-
-#boton-comprar{
+#btn-buy{
     grid-area: boton-comprar;
 }
-#img{
+#img-product{
     grid-area: imagen;
-    max-width: 85vh;
+    max-width: 35vw;
     border: 2px solid black;
     border-radius: 10px;
 
 }
-#titulo{
+#product-title{
     grid-area: titulo;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aqua;
     font-size: 3vw;
-    -webkit-text-stroke: 1px black;
 }
-#precio{
+#product-price{
     grid-area: precio;
+    color: red;
+    font-size: 2vw;
 }
-
-.descripcion{
+.product-description{
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin: auto;
-    background-color: aquamarine;
 }
-
-#descripcion {
+#product-description {
+    background-color: aquamarine;
     grid-area: descripcion;
     display: flex;
     flex-direction: column;
 }
-
 a {
     color:darkgreen;
 }
-
 a:hover{
     background-color: aquamarine;
 }
 
-#precio {
-    color: red;
-    font-size: 2vw;
-}
-
-#formcomentarios{
+#reviews-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "reviews-title"
+    "score-review"
+    "comment-review"
+    "submit-review";
     border: 2px solid black;
     border-radius: 10px;
     padding: 5px;
-    }
+}
 
-h4{
+#reviews-title{
+    grid-area: reviews-title;
     font-size: 2vw;
 }
+#comment-review{
+    grid-area: comment-review;
+}
+#submit-review{
+    grid-area: submit-review;
+}
+#score-group {
+    grid-area: score-review;
+    display: flex;
+    gap: 10px;
+}
+

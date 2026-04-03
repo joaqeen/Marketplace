@@ -1,53 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASUS TUF GAMING A15</title>
     <link rel="stylesheet" href="producto.css">
 </head>
+
 <body>
-    <div id="contenedor-principal">
-        <img id="img" src="https://dlcdnwebimgs.asus.com/gain/ed4c3cdc-29c4-4bdf-a42b-9f008244a173/w800" alt="Imagen de Notebook ASUS Tuf Gaming A15">
-        <h1 id="titulo">Notebook ASUS Tuf Gaming A15</h1>
-        <p id="precio">Precio:  <i>$1.250.000</i></p>
-        <div id="descripcion">
-            <p class="descripcion">Diseñado para juegos serios y de durabilidad en el mundo real, el TUF Gaming A15 es un notebook portátil para juegos con Windows 10 Pro que puede llevarte a la victoria. Desarrollado por la última CPU AMD Ryzen™ 9 y la GPU GeForce RTX™ 2060, el juego lleno de acción es rápido, fluido y satura completamente las pantallas rápidas de nivel IPS de hasta 144Hz. Incluso con un chasis más pequeño y portátil que sus predecesores, este notebook para juegos también cuenta con una batería más grande de 90 Wh para una mayor duración de la batería. El eficiente enfriamiento autolimpiante se combina con la característica durabilidad de grado militar de TUF para hacer de este guerrero probado en batalla, un aliado confiable para los jugadores en movimiento.</p>
-            <p class="descripcion">Características:</p>
-            <ul class="descripcion">
+
+    <div id="product-container">
+        <img id="img-product" src="https://dlcdnwebimgs.asus.com/gain/ed4c3cdc-29c4-4bdf-a42b-9f008244a173/w800"
+            alt="Imagen de Notebook ASUS Tuf Gaming A15">
+        <h1 id="product-title">Notebook ASUS Tuf Gaming A15</h1>
+        <p id="product-price">Precio: <i>$1.250.000</i></p>
+        <div id="product-description">
+            <p class="product-description">Diseñado para juegos serios y de durabilidad en el mundo real, el TUF Gaming
+                A15 es un notebook portátil para juegos con Windows 10 Pro que puede llevarte a la victoria.
+                Desarrollado por la última CPU AMD Ryzen™ 9 y la GPU GeForce RTX™ 2060, el juego lleno de acción es
+                rápido, fluido y satura completamente las pantallas rápidas de nivel IPS de hasta 144Hz. Incluso con un
+                chasis más pequeño y portátil que sus predecesores, este notebook para juegos también cuenta con una
+                batería más grande de 90 Wh para una mayor duración de la batería. El eficiente enfriamiento
+                autolimpiante se combina con la característica durabilidad de grado militar de TUF para hacer de este
+                guerrero probado en batalla, un aliado confiable para los jugadores en movimiento.</p>
+            <p class="product-description">Características:</p>
+            <ul class="product-description">
                 <li>Procesador: AMD Ryzen 5, 7 o 9 (series 4000 a 8000, ej: Ryzen 7 7435HS o 8945H).</li>
                 <li>Gráficos: NVIDIA GeForce RTX 2050, 3050, 3060, 3070 o 4050/4070 (con MUX Switch).</li>
                 <li>Pantalla: 15.6 pulgadas FHD (1920x1080) IPS, 144Hz o 165Hz, Adaptive-Sync.</li>
                 <li>Memoria RAM: DDR4 o DDR5 (4800MHz - 5600MHz), ampliable hasta 32GB.</li>
             </ul>
+            <a href="https://www.asus.com/ar/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a15/" target="_blank">Link
+                hacia pagina de fabricante</a>
         </div>
-        <input id="boton-comprar" type="submit" value="Enviar">
+        <button id="btn-buy" type="button">Comprar</button>
+    </div>
 
-</div>
-    <a href="https://www.asus.com/ar/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a15/" target="_blank">Link hacia pagina de fabricante</a>
 
-    <form action="#" method="post" id="formcomentarios">
+    <form action="#" method="post" id="reviews-container">
 
-        <h4>Opiniones y comentarios</h4>
+        <h4 id="reviews-title">Opiniones y comentarios</h4>
+        <div id="score-group">
+            <label class="score-review">
+                1 <input type="radio" name="valuacion" value="1">
+            </label>
 
-        <label id="comentario">
-            Ingrese un comentario:<input type="text" placeholder="Su comentario" required>
+            <label class="score-review">
+                2 <input type="radio" name="valuacion" value="2">
+            </label>
+
+            <label class="score-review">
+                3 <input type="radio" name="valuacion" value="3">
+            </label>
+
+            <label class="score-review">
+                4 <input type="radio" name="valuacion" value="4">
+            </label>
+
+            <label class="score-review">
+                5 <input type="radio" name="valuacion" value="5">
+            </label>
+        </div>
+        <label id="comment-review">
+            <input type="text" placeholder="Ingrese un comentario" required name="comentario">
         </label>
 
-        <label>
-            1 <input type="radio" name="valuacion" value="1">
-        </label>
-
-        <label>
-            2 <input type="radio" name="valuacion" value="2">
-        </label>
-
-        <label>
-            3 <input type="radio" name="valuacion" value="3">
-        </label>
-
-        <input type="submit" value="Enviar">
+        <input id="submit-review" type="submit" value="Enviar">
     </form>
 
+
 </body>
+
 </html>
