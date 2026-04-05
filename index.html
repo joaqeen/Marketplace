@@ -1,30 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketplace</title>
-</head>
-<body>
-    <header>
-        <h1>Marketplace</h1>
-    </header>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marketplace</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title-nav">Marketplace</h1>
+            <nav>
+            <input id="search-nav" type="text" placeholder="Ingrese un producto">
+            <button id="btn-search">Buscar</button>
+            </nav>
+        </header>
 
-    <nav>
-        <input type="text" placeholder="Ingrese un producto">
-        <button>Buscar</button>
-    </nav>
+        <section id="products-section">
+            <article class="product" id="article-asus-tuf-gaming-a15">
+                <img src="https://dlcdnwebimgs.asus.com/gain/ed4c3cdc-29c4-4bdf-a42b-9f008244a173/w800" alt="">
+                <a class="title-a" href="Notebook.html">Notebook ASUS Tuf Gaming A15</a>
+            </article>
+            <article class="product" id="article-lenovo-thinkpad">
+                <img src="https://p1-ofp.static.pub//fes/cms/2024/03/20/d03kqdwmcdhm5jlrd503v93y0hv72n243294.png" alt="">
+                <a class="title-a" href="Notebook.html">Notebook LENOVO ThinkPad</a>
+            </article>
+            <article class="product" id="article-dell-inspiron">
+                <img src="https://i5.walmartimages.com/seo/Dell-Inspiron-15-6-FHD-Touch-Laptop-AMD-Ryzen-5-8GB-RAM-256-GB-SSD-Black_c761828d-f59d-4d87-a380-33740e087477.12423ff52be2c3671d251794ff0afca0.jpeg" alt="">
+                <a class="title-a" href="Notebook.html">Notebook DELL Inspiron</a>
+            </article>
+        </section>
 
-    <section>
-        <header><h3>Productos a la venta</h3></header>
-        <article>
-            <a href="Notebook.html"><img src="https://dlcdnwebimgs.asus.com/gain/ed4c3cdc-29c4-4bdf-a42b-9f008244a173/w800" alt="">Notebook ASUS Tuf Gaming A15</a>
-        </article>
-        <article>
-            <a href="#">Notebook LENOVO ThinkPad</a>
-        </article>
-        <article><a href="#">Notebook DELL Inspiron</a></article>
-    </section>
-
-</body>
-</html>
+    </body>
+    </html>
